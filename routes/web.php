@@ -13,11 +13,11 @@
     |
     */
 
-    Route::get('/register','AuthController@showFormRegister')->name('form.register');
-    Route::post('/register','AuthController@Register')->name('users.register');
-    Route::get('/','AuthController@showFormLogin')->name('login');
-    Route::post('login','AuthController@login')->name('users.login');
-    Route::get('/logout', 'AuthController@logout')->name('users.logout');
+//    Route::get('/register','AuthController@showFormRegister')->name('form.register');
+//    Route::post('/register','AuthController@Register')->name('users.register');
+//    Route::get('/','AuthController@showFormLogin')->name('login');
+//    Route::post('login','AuthController@login')->name('users.login');
+//    Route::get('/logout', 'AuthController@logout')->name('users.logout');
     Route::prefix('rooms')->group(function () {
         Route::get('/','RoomController@index')->name('rooms.index');
         Route::get('/create','RoomController@create')->name('rooms.create');
